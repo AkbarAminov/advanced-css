@@ -1,0 +1,37 @@
+ * New thing *
+
+ - Making your div like polygon
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+
+ - Animation
+
+    @keyframes moveInLeft{
+    0%{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    60%{
+      transform: translateX(10px);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+    }
+
+    Calling in class:
+
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+  - Transform
+
+    scale -> transform: scaleX(1.4) scaleY(1.6);
+    translate ->  translateY(-3px);
+
+Command
+
+- $live-server - to open in open server for changing without reload
+- $npm run compile:sass -w - control scss to css converting 
