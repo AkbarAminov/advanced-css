@@ -31,7 +31,85 @@
     scale -> transform: scaleX(1.4) scaleY(1.6);
     translate ->  translateY(-3px);
 
+  - CSS style
+
+    [class^="col-"]{} - выбирает все классы начинающиеся с "col-"
+
+
 Command
 
 - $live-server - to open in open server for changing without reload
 - $npm run compile:sass -w - control scss to css converting 
+
+
+
+Code for grid
+
+<section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+                
+            </div>
+        </section>
