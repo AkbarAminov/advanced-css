@@ -9,6 +9,7 @@
     border-radius: 100px;
     transition: all .2s;
     position: relative;
+    font-size: $default-font-size;
   }
 
   &:hover {
@@ -24,6 +25,20 @@
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  
+  }
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  
   }
 
   &::after {
@@ -39,10 +54,7 @@
     transition: all .4s;
   }
 
-  &--white::after {
-    background-color: $color-white;
-  }
-
+  
   &:hover::after {
     opacity: 0;
     transform: scaleX(1.4) scaleY(1.6);
@@ -53,4 +65,27 @@
     animation-fill-mode: backward;
   }
 
+}
+
+.btn-text{
+  &:link,
+  &:visited{
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all .2s;
+  }
+  &:hover{
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 3rem 2rem rgba($color-black, .15);
+    transform: translateY(-2px);
+  }
+  &:active{
+    box-shadow: 0 1rem 1rem rgba($color-black, .15);
+    transform: translateY(0);
+  }
 }

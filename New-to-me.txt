@@ -35,6 +35,21 @@
 
     [class^="col-"]{} - выбирает все классы начинающиеся с "col-"
 
+  - Style 
+
+
+    in parent:
+
+    background-blend-mode: screen;
+
+    in child:
+    
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+
+
+- Cover Video
+
+    object-fit: cover;
 
 Command
 
@@ -42,6 +57,11 @@ Command
 - $npm run compile:sass -w - control scss to css converting 
 
 
+
+Useful Links
+
+Html glyphicons
+    https://css-tricks.com/snippets/html/glyphs/
 
 Code for grid
 
